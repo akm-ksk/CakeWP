@@ -1,0 +1,59 @@
+@use "./colors";
+@use "./fonts";
+
+@mixin PseudoElement($Content) {
+  content: $Content;
+  display: block;
+}
+
+@mixin H2Title($FontSize) {
+  font-family: fonts.$EnFont;
+  font-size: $FontSize;
+  letter-spacing: 0.12em;
+  color: colors.$DeepOrange;
+  text-transform: uppercase;
+}
+@mixin Title02($FontSize) {
+  font-family: fonts.$JpFont;
+  font-size: $FontSize;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: colors.$Orange;
+}
+
+@mixin LinkTextEn($FontSize) {
+  color: colors.$Orange;
+  font-family: fonts.$EnFont;
+  font-size: $FontSize;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+@mixin LinkTextJp($FontSize) {
+  color: colors.$Black;
+  font-family: fonts.$JpFont;
+  font-size: $FontSize;
+  letter-spacing: 0.05em;
+}
+
+@mixin HumBorder {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: colors.$Orange;
+  width: 100%;
+  height: 1px;
+  transition: 0.7s;
+}
+
+@mixin HumOpen($Rotate) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate($Rotate);
+}
+
+@mixin AbsoluteCenter {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

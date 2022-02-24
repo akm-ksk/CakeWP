@@ -24,3 +24,5 @@ node_modules/
 
 admin
 resource/img
+node_modules
+_source
