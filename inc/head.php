@@ -43,6 +43,8 @@ $slug = $page->post_name;
                 print 'list';
               } elseif (is_single()) {
                 print 'single';
+              } elseif (is_404()) {
+                print 'page404';
               } else {
                 print 'other';
               }

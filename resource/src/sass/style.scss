@@ -603,3 +603,33 @@ main {
     }
   }
 }
+/* 09.Page 404 */
+#page404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  h1 {
+    display: block;
+    margin: 0 auto 15px;
+    font-size: 48px;
+    font-weight: 700;
+    color: colors.$Black;
+    text-align: center;
+  }
+  p {
+    display: block;
+    margin: 0 auto 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: colors.$Black;
+    text-align: center;
+  }
+  a {
+    @include mixin.LinkTextJp($FontSize: 18px);
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: underline;
+  }
+}
