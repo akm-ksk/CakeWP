@@ -724,4 +724,124 @@ main {
   margin: 0 auto;
   text-decoration: underline;
 }
+
+/* 10.Form */
+#form {
+  padding: 80px 0;
+  background-color: #f4f0ec;
+}
+#form .cntIn {
+  max-width: 786px;
+}
+#form h1 {
+  margin: 0 0 50px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #393939;
+}
+@media only screen and (max-width: 768px) {
+  #form h1 {
+    font-size: 26px;
+  }
+}
+#form #errMassage {
+  display: none;
+  margin: 0 0 30px;
+  font-size: 18px;
+  color: #ff3300;
+  text-align: center;
+}
+#form #confirmMassage {
+  display: none;
+  margin: 0 0 30px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
+}
+#form form {
+  padding: 30px 20px;
+  background-color: #fff;
+}
+#form dl {
+  flex-wrap: wrap;
+}
+#form dt {
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  #form dt {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+}
+#form dd {
+  margin: 0 0 30px;
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  #form dd {
+    width: 100%;
+  }
+}
+#form input[type=text],
+#form input[type=tel],
+#form input[type=email],
+#form textarea {
+  border: 1px solid #393939;
+  width: 100%;
+}
+#form input[type=text].err,
+#form input[type=tel].err,
+#form input[type=email].err,
+#form textarea.err {
+  border-color: #ff3300;
+  background-color: #ffcccc;
+}
+#form textarea {
+  height: 100px;
+}
+#form input[type=button],
+#form input[type=submit] {
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px 0;
+  width: 200px;
+  text-align: center;
+  box-shadow: 2px 2px 2px #b4b4b4;
+  transition: 0.5s;
+}
+#form input[type=button]:hover,
+#form input[type=submit]:hover {
+  box-shadow: none;
+}
+
+/* 11.FormSend */
+#formSend {
+  padding: 80px 0;
+}
+#formSend .cntIn {
+  max-width: 786px;
+}
+#formSend h1 {
+  margin: 0 0 50px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #393939;
+}
+@media only screen and (max-width: 768px) {
+  #formSend h1 {
+    font-size: 26px;
+  }
+}
+#formSend p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
+}
 /*# sourceMappingURL=style.css.map */

@@ -633,3 +633,110 @@ main {
     text-decoration: underline;
   }
 }
+
+/* 10.Form */
+#form {
+  padding: 80px 0;
+  background-color: colors.$Beige;
+  .cntIn {
+    max-width: size.$CntSp;
+  }
+  h1 {
+    margin: 0 0 50px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: colors.$Black;
+    @media only screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+  #errMassage {
+    display: none;
+    margin: 0 0 30px;
+    font-size: 18px;
+    color: #ff3300;
+    text-align: center;
+  }
+  #confirmMassage {
+    display: none;
+    margin: 0 0 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  form {
+    padding: 30px 20px;
+    background-color: colors.$PureWhite;
+  }
+  dl {
+    flex-wrap: wrap;
+  }
+  dt {
+    margin: 0 0 30px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 30%;
+    @media only screen and (max-width: 768px) {
+      margin: 0 0 15px;
+      width: 100%;
+    }
+  }
+  dd {
+    margin: 0 0 30px;
+    width: 70%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    border: 1px solid colors.$Black;
+    width: 100%;
+    &.err {
+      border-color: #ff3300;
+      background-color: #ffcccc;
+    }
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type="button"],
+  input[type="submit"] {
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px 0;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 2px colors.$Gray;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+/* 11.FormSend */
+#formSend {
+  padding: 80px 0;
+  .cntIn {
+    max-width: size.$CntSp;
+  }
+  h1 {
+    margin: 0 0 50px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: colors.$Black;
+    @media only screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+  p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+  }
+}
